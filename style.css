@@ -1,0 +1,98 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: white;
+  overflow-x: hidden;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  margin: 20px 50px 20px;
+}
+
+.score {
+  display: flex;
+  justify-content: center;
+}
+
+.score span {
+  font-size: 40px;
+  margin-top: 50px 0 50px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 450px 300px 450px;
+}
+
+.heroes,
+.villains {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1vh;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid gray;
+  border-radius: 20px;
+  padding: 30px 10px;
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+.vader {
+  align-self: flex-end;
+}
+
+#vader {
+  grid-column: -2/-1;
+}
+@media (max-width:1400px){
+.heroes,
+.villains {
+  display: grid;
+  grid-template-columns: 1fr 1fr ;
+  gap: 1vh;
+}
+.container{
+  grid-template-columns: 300px 170px 300px;
+}
+.score{
+  /* width: 10vw; */
+}
+}
+@media (max-width:900px){
+  .heroes,
+  .villains {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1vh;
+  }
+  .container{
+    grid-template-columns: 200px 130px 200px;
+  }
+  .score{
+    /* width: 10vw; */
+  }
+  }
+  @media (max-width:620px){
+    .heroes,
+    .villains {
+      display: grid;
+      grid-template-columns: 1fr ;
+      gap: 2vh;
+    }
+    .container{
+      grid-template-columns: 170px;
+    }
+    .score{
+      /* width: 10vw; */
+    }
+    }
