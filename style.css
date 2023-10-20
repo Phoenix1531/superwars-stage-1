@@ -69,9 +69,7 @@ footer{
 .container{
   grid-template-columns: 300px 170px 300px;
 }
-.score{
-  /* width: 10vw; */
-}
+
 }
 @media (max-width:900px){
   .heroes,
@@ -83,9 +81,7 @@ footer{
   .container{
     grid-template-columns: 200px 130px 200px;
   }
-  .score{
-    /* width: 10vw; */
-  }
+ 
   }
   @media (max-width:620px){
     .heroes,
@@ -97,7 +93,5 @@ footer{
     .container{
       grid-template-columns: 170px;
     }
-    .score{
-      /* width: 10vw; */
-    }
+
     }
